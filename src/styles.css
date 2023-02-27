@@ -24,7 +24,6 @@ body {
     height: 100vh;
 }
 
-
 .section {
     background-color: black;
     width: 100vw;
@@ -163,3 +162,18 @@ h3 {
     padding: 5px;
     background-color: rgba(13, 13, 13, 0.8);
 }
+
+.navbar {
+    font-size: 20px;
+    width: 100vw;
+}
+
+.navbar-nav a {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: #CF5C09;
+}
+
+
