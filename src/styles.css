@@ -1,24 +1,131 @@
+@font-face { 
+	font-family: "lastica"; 
+	src: url('font/Lastica.ttf'); 
+}
+
+:root {
+    --primary-font-family: "Poppins", sans-serif;
+    --heading-font-family: "lastica", serif;
+    --primary-color: white;
+    
+}
 body {
     background-color: rgb(195, 93, 93);
+    color: var(--primary-color);
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.full-dimensions {
     width: 100vw;
     height: 100vh;
 }
 
-header {
-    
+
+.section {
+    background-color: black;
+    width: 100vw;
+    padding: 50px;
+}
+
+.header {
+    background-image: url("/images/general/8.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 100px; 
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-family: var(--heading-font-family), serif;
+}
+
+.header h2 {
+    color: var(--primary-color);
+    font-size: 220px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    font-family: var(--heading-font-family), serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Poppins";
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.events-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: url("/images/general/10.jpeg");
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.event-text {
+    display: none;
+    color: var(--primary-font-family);
+    font-size: 18px;
+    text-align: center;
+}
+
+.event:hover {
+    transition: all 400ms ease-in-out;
+    background-image: none;
+}
+
+.event:hover .event-text {
+    display: block;
+    transition: all 400ms ease-in-out;
 }
 
 
-header h1 {
-    color: rgb(181, 20, 20);
-    font-size: 70px; 
-    text-align: center;
-    margin: 0;
+.about {
+    background-color: #CF5C09;
 }
 
-header h2 {
-    color: rgb(199, 23, 23);
-    font-size: 100px;
+.about div {
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 50px;
+    margin: 0 auto;
     text-align: center;
-    margin: 0;
+}
+
+.collage {
+    height: 1000px;
+}
+
+.footer {
+    background-color: #CF5C09;
+    width: 100vw;
 }
