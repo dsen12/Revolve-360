@@ -1,3 +1,24 @@
-h1 {
-    color: aqua;
+body {
+    background-color: rgb(195, 93, 93);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    
+}
+
+
+header h1 {
+    color: rgb(181, 20, 20);
+    font-size: 70px; 
+    text-align: center;
+    margin: 0;
+}
+
+header h2 {
+    color: rgb(199, 23, 23);
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
 }
