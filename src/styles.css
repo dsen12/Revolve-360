@@ -36,6 +36,8 @@ body {
     margin-bottom: 100px;
 }
 
+/* HEADER */
+
 .header {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.2),
@@ -137,6 +139,10 @@ h3 {
     transition: all 400ms ease-in-out;
 }
 
+.event-text-device {
+    display: none;
+}
+
 /* COLLAGE SECTION */
 .collage {
     margin: 10px 0;
@@ -199,7 +205,7 @@ h3 {
 
 .copyright {
     width: 100vw;
-    padding: 5px;
+    padding: 7px;
     background-color: rgba(13, 13, 13, 0.8);
 }
 
@@ -225,12 +231,99 @@ h3 {
 /* MEDIA QUERIES */
 
 @media (max-width: 960px) {
+
+.full-dimensions{
+    height: 75vh;
+}
+
+.section {
+    margin: 0px;
+    padding: 60px 15px;
+}
+
+/* HEADER */
+
+.heading {
+   padding-top: 100px;
+}
+.header h1 {
+    font-size: 50px;
+}
+.header h2 {
+    font-size: 110px;
+}
+
+/* EVENTS-GALLERY SECTION */
+
+.events-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.event-text-device {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+/* ABOUT SECTION */
+
+.about div {
+    padding: 0 20px;
+}
+
+/* COLLAGE SECTION */
+
 .collage img {
     display: none;
 }
+
 .collage video {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
+
+.collage {
+    margin: 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 0px;
+    width: 100vw;
+    margin: 0;
+}
+
+.footer .empty {
+    display: none;
+}
+
+.footer .links a {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .links {
+    padding-bottom: 35px;
+}
+
+.footer .social-links {
+    padding-bottom: 20px;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+/* NAVIGATION BAR */
+
+.navbar-toggler-icon {
+    background-color: rgba(13, 13, 13, 0.8);
+}
+
 }
 
