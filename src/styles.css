@@ -10,7 +10,7 @@
     
 }
 body {
-    background-color: rgb(195, 93, 93);
+    background-color: black;
     color: var(--primary-color);
 }
 
@@ -83,11 +83,29 @@ h3 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-image: url("/images/general/10.jpeg");
     width: 200px;
     height: 200px;
     background-position: center;
     background-size: cover;
+}
+
+.one {
+    background-image: url("/images/thumbnails/WEDDINGS.jpg");
+}
+.two {
+    background-image: url("/images/thumbnails/BIRTHDAYS.jpg");
+}
+.three {
+    background-image: url("/images/thumbnails/CORPORATE FUNCTIONS.jpg");
+}
+.four {
+    background-image: url("/images/thumbnails/BRAND ACTIVATIONS.jpg");
+}
+.five {
+    background-image: url("/images/thumbnails/SCHOOL GRADUATIONS & FORMALS.jpg");
+}
+.six {
+    background-image: url("/images/thumbnails/AWARD NIGHTS.jpg");
 }
 
 .event-text {
@@ -107,7 +125,6 @@ h3 {
     transition: all 400ms ease-in-out;
 }
 
-
 .about {
     background-color: #CF5C09;
 }
@@ -121,11 +138,28 @@ h3 {
     text-align: center;
 }
 
-.collage {
-    height: 1000px;
+.footer {
+    background-color: black;
+    width: 100vw;
+    padding: 30px;
 }
 
-.footer {
+.footer .links a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.footer .social-links a {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 10px;
     background-color: #CF5C09;
+    border-radius: 50%;
+}
+
+.copyright {
     width: 100vw;
+    padding: 5px;
+    background-color: rgba(13, 13, 13, 0.8);
 }
